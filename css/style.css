@@ -1,0 +1,83 @@
+
+/* font-family: "Open Sans", sans-serif;
+font-family: "Bebas Neue", sans-serif; */
+:root {
+    --font-family: "Open Sans", sans-serif;
+    --second-family: "Bebas Neue", sans-serif;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(/img/header_bg.jpg);
+    background-size: 100vw 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+.header-logo {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: calc(50vh - 120px);
+    
+}
+.logo-white {
+    width: 101px;
+    height: 23px;
+    margin: 0 auto;
+}
+.heder-h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.095em;
+    padding-left: 12px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header-p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin-top: -7px;
+    padding-bottom: calc(50vh - 124px);
+
+}
+.header-link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-link:hover{
+    color: #16ACE8;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .header-p, .heder-h1{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-p{
+        padding-bottom: calc(50vh - 220px);
+    }
+}
+@media screen and (max-width: 365px){
+    .header-logo {
+        padding-bottom: calc(50vh - 220px);
+        
+    }
+}
