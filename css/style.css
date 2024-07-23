@@ -326,6 +326,53 @@ select {
   display: inline-block;
 }
 
+.newsletter {
+  background-color: #171819;
+}
+.newsletter-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 127px;
+}
+.newsletter-h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  padding-top: 4px;
+}
+.newsletter-form {
+    display: flex;
+}
+.newsletter-input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #48555b;
+  padding-left: 16px;
+  width: 250px;
+  height: 40px;
+  border: none;
+}
+.newsletter-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #00A4E5;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+
 
 @media screen and (max-width: 992px) {
   .nav .container,
