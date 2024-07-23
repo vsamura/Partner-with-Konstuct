@@ -216,7 +216,7 @@ html {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  padding: 11px 29px;
+  padding-top: 11px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -253,6 +253,31 @@ html {
   letter-spacing: 0.015em;
   color: #48555b;
 }
+.get {
+  background-image: url(../img/get-bg.jpg);
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.get-h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #48555b;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-top: 175px;
+  padding-bottom: 34px;
+}
+.get-btn {
+  margin-bottom: 231px;
+  display: inline-block;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -278,7 +303,7 @@ html {
   }
   .about {
     padding-bottom: 57px;
-}
+  }
   .services-top {
     flex-direction: column;
     padding-bottom: 0px;
@@ -293,6 +318,9 @@ html {
   }
   .services-btn{
     margin: 0 0 30px auto ;
+  }
+  .get-h2{
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 600px) {
