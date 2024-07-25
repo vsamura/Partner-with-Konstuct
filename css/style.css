@@ -371,11 +371,101 @@ select {
   text-decoration: none;
   border: none;
 }
+.footer {
+  background-color: #141a20;
+  padding-top: 42px;
+  padding-bottom: 50px;
+}
+.footer-box {
+  display: flex;
+  justify-content: flex-start;
+}
+.compani {
+  width: 250px;
+  margin-right: 70px;
+}
+.footer-h4 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 19px;
+}
+.compani-img {
+  width: 101px;
+  height: 23px;
+  margin-bottom: 15px;
+}
+.compani-p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 173%;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+.links {
+  max-width: 302px;
+  height: 150px;
+  margin-right: 18px;
+}
+.links-h4{
+  padding-bottom: 10px;
+}
+.links-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.links-li{
+  width: 80px;
+
+}
+.links-link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 227%;
+  letter-spacing: 0.08em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact-box {
+  display: flex;
+  justify-content: start;
+  gap: 46px;
+}
+.contact-box-content {
+  width: 141px;
+}
+.contact-h4{
+  padding-bottom: 14px;
+}
+.contacts-p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 145%;
+  letter-spacing: 0.08em;
+  color: #fff;
+  padding-bottom: 16px;
+}
+.contact-box-icons {
+  display: flex;
+  gap: 24px;
+}
+
+
 
 
 
 @media screen and (max-width: 992px) {
   .newsletter-box,
+  .footer .container,
   .newsletter .container,
   .nav .container,
   .about .container,
@@ -422,6 +512,13 @@ select {
     margin-bottom: 100px;
     display: inline-block;
   }
+  .contact-box {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-box{
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 740px) {
   .newsletter-box{
@@ -432,6 +529,15 @@ select {
   .newsletter-form{
     margin: 0 auto;
   }
+  .footer-box{
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+  }
+  .compani {
+    margin-right: 0;
+  }
+
 }
 @media screen and (max-width: 600px) {
   .header-p,
@@ -488,5 +594,8 @@ select {
   }
   .newsletter-input{
     width: 200px;
+  }
+  .contact{
+    padding-top: 30px;
   }
 }
